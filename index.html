@@ -23,6 +23,32 @@
         <div id="unity-build-title">Meme Jump</div>
       </div>
     </div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDzHRCEyWYDT3au5hnJwxhfEDNnm8EWDBE",
+    authDomain: "meme-jump.firebaseapp.com",
+    databaseURL: "https://meme-jump-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "meme-jump",
+    storageBucket: "meme-jump.appspot.com",
+    messagingSenderId: "898697657954",
+    appId: "1:898697657954:web:4c825b9ffaccc09a471b3b",
+    measurementId: "G-JG7KB47S0D"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
     <script>
 
       var container = document.querySelector("#unity-container");
